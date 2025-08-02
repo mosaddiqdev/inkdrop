@@ -75,14 +75,14 @@ inkdrop/
 ## 🚀 Quick Start
 
 ### **Option 1: Direct Use**
-1. Visit the live app: [inkdrop.netlify.app](https://inkdrop.netlify.app)
+1. Visit the live app: [1inkdrop.netlify.app](https://1inkdrop.netlify.app)
 2. Start writing notes immediately
 3. Install as PWA for native app experience
 
 ### **Option 2: Local Development**
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/inkdrop.git
+git clone https://github.com/mosaddiqdev/inkdrop.git
 cd inkdrop
 
 # Serve locally (any static server)
