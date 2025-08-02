@@ -75,7 +75,7 @@ inkdrop/
 ## 🚀 Quick Start
 
 ### **Option 1: Direct Use**
-1. Visit the live app: [1inkdrop.netlify.app](https://1inkdrop.netlify.app)
+1. Visit the live app: [1nkdrop.netlify.app](https://1nkdrop.netlify.app)
 2. Start writing notes immediately
 3. Install as PWA for native app experience
 
