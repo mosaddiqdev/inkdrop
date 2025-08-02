@@ -51,12 +51,95 @@ body {
 }
 
 
+/* Tablet Portrait (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .app {
+        max-width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        padding: 0 20px;
+    }
+
+    header {
+        padding: 28px 24px;
+    }
+
+    .search-box {
+        padding: 18px 24px;
+        font-size: 17px;
+    }
+
+    .note {
+        padding: 20px 24px;
+        gap: 16px;
+    }
+
+    .edit {
+        padding: 24px;
+    }
+}
+
+/* Mobile Portrait (up to 768px) */
 @media (max-width: 768px) {
     .app {
         max-width: 100%;
         height: 100vh;
         height: 100dvh;
+    }
+}
 
+/* Mobile Landscape Orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+    .app {
+        height: 100vh;
+        height: 100dvh;
+    }
+
+    header {
+        padding: 16px 24px;
+    }
+
+    .search-box {
+        padding: 12px 20px;
+    }
+
+    .note {
+        padding: 14px 20px;
+        gap: 12px;
+    }
+
+    .note-title {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .note-preview {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .edit {
+        padding: 16px 20px;
+    }
+
+    .edit input {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+
+    .edit textarea {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+}
+
+/* Tablet Landscape (1025px+) */
+@media (min-width: 1025px) {
+    .app {
+        max-width: 690px;
+        margin: 0 auto;
+        height: 100vh;
+        background: #0f0f0f;
     }
 }
 
@@ -195,6 +278,17 @@ button.delete:hover {
 
     .clear {
         right: 16px;
+    }
+}
+
+/* Landscape-specific search adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .search-box {
+        padding: 12px 20px;
+    }
+
+    .search-box input {
+        font-size: 15px;
     }
 }
 
@@ -402,6 +496,50 @@ button.delete:hover {
     }
 }
 
+/* Tablet bulk bar styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .bulk-bar {
+        padding: 12px 24px;
+        gap: 16px;
+        min-height: 52px;
+    }
+
+    .bulk-info span {
+        font-size: 15px;
+    }
+
+    .bulk-action-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+        min-height: 36px;
+    }
+}
+
+/* Landscape bulk bar adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .bulk-bar {
+        padding: 6px 20px;
+        gap: 10px;
+        min-height: 40px;
+    }
+
+    .bulk-info span {
+        font-size: 12px;
+    }
+
+    .bulk-action-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+        min-height: 30px;
+        gap: 4px;
+    }
+
+    .bulk-action-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
 
 
 
@@ -585,6 +723,55 @@ button.delete:hover {
     }
 }
 
+/* Tablet note styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .note {
+        padding: 20px 24px;
+        gap: 16px;
+    }
+
+    .note-title {
+        font-size: 17px;
+    }
+
+    .note-preview {
+        font-size: 15px;
+    }
+
+    .note-date {
+        font-size: 13px;
+    }
+}
+
+/* Landscape note adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .note {
+        padding: 14px 20px;
+        gap: 12px;
+    }
+
+    .note-title {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .note-preview {
+        font-size: 13px;
+        line-height: 1.4;
+        max-height: 2.8em;
+        /* Limit to 2 lines in landscape */
+    }
+
+    .note-date {
+        font-size: 11px;
+    }
+
+    .note-checkbox {
+        width: 16px;
+        height: 16px;
+    }
+}
+
 
 .edit {
     flex: 1;
@@ -613,6 +800,42 @@ button.delete:hover {
     .edit textarea {
         font-size: 16px;
 
+    }
+}
+
+/* Tablet edit styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .edit {
+        padding: 24px;
+    }
+
+    .edit input {
+        font-size: 30px;
+        padding: 24px 0;
+        margin-bottom: 28px;
+    }
+
+    .edit textarea {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+}
+
+/* Landscape edit adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .edit {
+        padding: 16px 20px;
+    }
+
+    .edit input {
+        font-size: 22px;
+        padding: 12px 0;
+        margin-bottom: 16px;
+    }
+
+    .edit textarea {
+        font-size: 15px;
+        line-height: 1.5;
     }
 }
 
@@ -771,6 +994,60 @@ footer {
 
     .btn-ghost {
         padding: 10px;
+    }
+}
+
+/* Tablet header styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 28px 24px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+/* Landscape header adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    header {
+        padding: 16px 24px;
+        padding-left: max(24px, env(safe-area-inset-left));
+        padding-right: max(24px, env(safe-area-inset-right));
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+/* Safe area adjustments for devices with notches */
+@supports (padding: max(0px)) {
+    .app {
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+
+    @media (orientation: landscape) {
+        .app {
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+        }
+
+        header {
+            padding-left: max(24px, env(safe-area-inset-left));
+            padding-right: max(24px, env(safe-area-inset-right));
+        }
+
+        .search-box {
+            margin-left: env(safe-area-inset-left);
+            margin-right: env(safe-area-inset-right);
+        }
+
+        .edit {
+            padding-left: max(20px, env(safe-area-inset-left));
+            padding-right: max(20px, env(safe-area-inset-right));
+        }
     }
 }
 
